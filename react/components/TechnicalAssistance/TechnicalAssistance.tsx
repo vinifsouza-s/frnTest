@@ -1,6 +1,10 @@
 import React from 'react'
+import '../../../styles/configs/design-tokens.css'
 
-const TechnicalAssistance = () => {
-  return <div>TESTE APP</div>
-};
-export default TechnicalAssistance;
+import AssistanceSearch from '../AssistanceSearch/AssistanceSearch'
+
+const AssistanceSearchStructure: React.FC = () => {
+  return <AssistanceSearch />
+}
+
+export default AssistanceSearchStructure
