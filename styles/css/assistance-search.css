@@ -6,7 +6,8 @@
   background-color: var(--color-white-90);
   color: var(--color-black-90);
   border-radius: 8px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--typography-body-fontfamily);
+  margin-bottom: 10rem;
 }
 
 /* =========================================
@@ -14,17 +15,17 @@
 ========================================= */
 
 :global(.assistance-search__sectionTitle) {
-  font-size: 1.5rem;
+  font-size: var(--typography-heading-4-fontsize);
   color: var(--semantic-text-emphasis);
   margin-bottom: 1rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: var(--typography-heading-4-fontweight);
 }
 
 :global(.assistance-search__sectionTitle--product) {
   color: var(--color-black-90);
   text-align: center;
-  font-family: AntarcticaVAR, sans-serif;
+  font-family: var(--typography-heading-4-fontfamily);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +54,7 @@
   border-radius: 0;
   cursor: pointer;
   transition: border-bottom 0.3s ease, color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--typography-body-fontfamily);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,11 +88,11 @@
 :global(.assistance-search__description) {
   text-align: center;
   margin-top: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--typography-body-fontfamily);
 }
 
 :global(.assistance-search__description--title) {
-  font-size: 1rem;
+  font-size: var(--typography-body-fontsize);
   color: var(--color-black-90);
   margin-bottom: 0.25rem;
   margin-top: 2rem;
@@ -131,11 +132,11 @@
 :global(.assistance-search__select) {
   background-color: var(--color-white-90);
   color: var(--color-black-90);
-  border: 1px solid #d7d7d7;
+  border: 1px solid var(--neutral-grey-border);
   padding-left: 13px;
   font-size: 0.75rem;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--typography-body-fontfamily);
   width: 100%;
   height: 38px;
   box-sizing: border-box;
@@ -148,7 +149,7 @@
 
 :global(.assistance-search__inlineButton) {
   background-color: var(--color-white-90);
-  border: 1px solid #d7d7d7;
+  border: 1px solid var(--neutral-grey-border);
   border-left: none;
   border-radius: 0 4px 4px 0;
   padding: 0 1rem;
@@ -162,7 +163,7 @@
 }
 
 :global(.assistance-search__inlineButton:hover) {
-  background-color: #f0f0f0;
+  background-color: var(--color-white-30);
 }
 
 :global(.assistance-search__input:hover),
@@ -173,7 +174,7 @@
 
 :global(.assistance-search__input:disabled),
 :global(.assistance-search__select:disabled) {
-  background-color: #eeeeee;
+  background-color: var(--disabled-background);
   border-color: var(--semantic-border);
   color: var(--color-grey-90);
   cursor: not-allowed;
@@ -193,7 +194,7 @@
 
 :global(.result) {
   width: 469px;
-  background: #f2f2f2;
+  background: var(--neutral-background-grey);
   padding: 32px 50px;
   display: flex;
   flex-direction: column;
@@ -274,7 +275,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--color-white-90);
-  font-family: 'AntarcticaVAR', sans-serif;
+  font-family: var(--typography-heading-4-fontfamily);
   text-align: center;
   padding: 0 1.5rem;
   width: 100%;
@@ -283,14 +284,14 @@
 }
 
 :global(.assistance-search__bannerText h2) {
-  font-size: 1.5rem;
+  font-size: var(--typography-heading-4-fontsize);
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.4;
 }
 
 :global(.assistance-search__bannerText p) {
-  font-size: 1rem;
+  font-size: var(--typography-body-fontsize);
   font-weight: 300;
   line-height: 1.6;
 }
