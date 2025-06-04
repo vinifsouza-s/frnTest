@@ -1,3 +1,3 @@
-import TechnicalAssistance from './components/TechnicalAssistance/TechnicalAssistance';
+import TechnicalAssistance from './components/TechnicalAssistance/TechnicalAssistance'
 
-export default TechnicalAssistance;
+export default TechnicalAssistance
