@@ -1,0 +1,19 @@
+:root {
+  --color-black-90: #333333;
+  --color-white-90: #ffffff;
+  --color-white-30: #f0f0f0;
+  --color-white-40: #f5f5f5;
+  --color-grey-40: #d7d7d7,
+  --color-grey-90: #999999;
+  --semantic-border: #dddddd;
+  --semantic-border-20:: #bbbbbb
+  --semantic-background-action-primary: #0F3E99;
+  --semantic-text-emphasis: #d71920;
+  --semantic-text-emphasis-product: #e73743;
+  --typography-body-fontfamily: San Francisco, sans-serif;
+  --typography-body-fontweight: normal;
+  --typography-body-fontsize: 1rem;
+  --typography-heading-4-fontfamily: San Francisco, sans-serif;
+  --typography-heading-4-fontweight: normal;
+  --typography-heading-4-fontsize: 1.5rem;
+}
