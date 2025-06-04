@@ -37,10 +37,11 @@
 
 :global(.assistance-search__productList) {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 :global(.assistance-search__productButton) {
@@ -53,6 +54,24 @@
   cursor: pointer;
   transition: border-bottom 0.3s ease, color 0.3s ease;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+:global(.assistance-search__productIcon) {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+:global(.assistance-search__productIcon[src*='franke_icon_lavaloucas']) {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 0.6rem;
+  margin-top: 0.8rem;
 }
 
 :global(.assistance-search__productButton:hover),
@@ -75,6 +94,7 @@
   font-size: 1rem;
   color: var(--color-black-90);
   margin-bottom: 0.25rem;
+  margin-top: 2rem;
 }
 
 :global(.assistance-search__description--product) {

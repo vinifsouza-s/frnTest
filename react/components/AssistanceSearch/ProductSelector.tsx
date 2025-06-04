@@ -21,6 +21,11 @@ const ProductSelector: React.FC<Props> = ({ selectedProduct, onSelect }) => (
           }`}
           onClick={() => onSelect(prod.value)}
         >
+          <img
+            className="assistance-search__productIcon"
+            src={prod.icon}
+            alt={prod.label}
+          />
           {prod.label}
         </button>
       ))}
