@@ -5,23 +5,39 @@ import type { Assistance } from '../../Types'
 const AssistanceResults: React.FC<{ results: Assistance[] }> = ({
   results,
 }) => (
-  <div className="results">
-    <h3 className="assistance-search__sectionTitle">
-      Assistências Encontradas:
-    </h3>
+  <div className="results results--centered">
     {results.map((res, i) => (
       <div key={i} className="result">
         <strong>{res.nomeAssistencia}</strong>
-        <div>
-          {res.endereco}, {res.bairro} - {res.cidade}/{res.uf}
-        </div>
-        <div>CEP: {res.cep}</div>
-        <div>
-          Tel: {res.firstPhone}
+        <span className="result__razaoSocial">{res.razaoSocial}</span>
+        <span>
+          <img
+            src="https://loja.franke.com.br/arquivos/distance-icon.svg"
+            alt="Ícone de localização"
+            width={16}
+            height={16}
+          />
+          {res.endereco}, {res.bairro} - {res.cidade}/{res.uf} | CEP: {res.cep}
+        </span>
+        <span>
+          <img
+            src="https://loja.franke.com.br/arquivos/telephone-icon-stores.svg"
+            alt="Ícone de telefone"
+            width={16}
+            height={16}
+          />
+          {res.firstPhone}
           {res.secondPhone && ` | ${res.secondPhone}`}
-        </div>
-        <div>Email: {res.email}</div>
-        <div>Razão Social: {res.razaoSocial}</div>
+        </span>
+        <span>
+          <img
+            src="https://loja.franke.com.br/arquivos/mail-icon-stores.svg"
+            alt="Ícone de e-mail"
+            width={16}
+            height={16}
+          />
+          <a href={`mailto:${res.email}`}>{res.email}</a>
+        </span>
       </div>
     ))}
   </div>
