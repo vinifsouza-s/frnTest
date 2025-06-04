@@ -8,11 +8,15 @@ const BannerSection = () => (
       className="assistance-search__bannerImage"
     />
     <div className="assistance-search__bannerText">
-      <h2>PROCURE UMA ASSISTÊNCIA TÉCNICA AUTORIZADA FRANKE</h2>
+      <h2>
+        PROCURE UMA ASSISTÊNCIA TÉCNICA <br />
+        AUTORIZADA FRANKE
+      </h2>
       <p>
         Para garantir que você tenha um atendimento pós-venda com o máximo de
-        excelência, oferecemos uma ampla rede de Assistências Técnicas
-        Autorizadas.
+        excelência,
+        <br />
+        oferecemos uma ampla rede de Assistências Técnicas Autorizadas.
       </p>
     </div>
   </div>
