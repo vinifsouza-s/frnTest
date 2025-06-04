@@ -1,13 +1,10 @@
 {
   "store.custom#assistencia-tecnica": {
-    "blocks": [
-      "rich-text#teste",
-      "custom-assistencia-tecnica"
-    ]
+    "blocks": ["custom-assistencia-tecnica"]
   },
-  "rich-text#teste": {
+  "custom-assistencia-tecnica": {
     "props": {
-      "text": "TESTE"
+      "blockClass": "technical-assistance"
     }
   }
 }
