@@ -23,7 +23,7 @@
   "devDependencies": {
     "@vtex/prettier-config": "0.1.4",
     "eslint": "7.12.1",
-    "eslint-config-vtex": "12.3.2",
+    "eslint-config-vtex": "^15.1.0",
     "eslint-config-vtex-react": "6.3.2",
     "husky": "4.2.3",
     "lint-staged": "10.1.1",
