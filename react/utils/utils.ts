@@ -1,4 +1,4 @@
-import type { UFData, CityData, AddressResponse } from '../Types'
+import type { UFData, CityData, AddressResponse, Assistance } from '../Types'
 
 export const fetchStates = async (product: string): Promise<string[]> => {
   const whereClause = `${product}=true`
@@ -40,4 +40,28 @@ export const fetchAddressByCep = async (
   } catch {
     return null
   }
+}
+
+export const fetchAssistances = async (
+  where: string
+): Promise<Assistance[]> => {
+  const fields =
+    'cidade,uf,endereco,firstPhone,nomeAssistencia,cep,secondPhone,razaoSocial,email,bairro'
+
+  const res = await fetch(
+    `/api/dataentities/AT/search?_where=${encodeURIComponent(
+      where
+    )}&_fields=${encodeURIComponent(fields)}`,
+    {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'REST-Range': 'resources=0-100',
+      },
+    }
+  )
+
+  const data: Assistance[] = await res.json()
+
+  return data
 }
